@@ -57,11 +57,17 @@ let f = { name: "Nat" };
 let g = [1, 2, 3];
 
 typeof a; // number
+console.log(`Тип переменной a: ${typeof a}`);
 typeof b; // string
+console.log(`Тип переменной b: ${typeof b}`);
 typeof c; // boolean
+console.log(`Тип переменной c: ${typeof c}`);
 typeof d; // object (исторический баг в JS)
+console.log(`Тип переменной d: ${typeof d}`);
 typeof e; // undefined
+console.log(`Тип переменной e: ${typeof e}`);
 typeof f; // object
+console.log(`Тип переменной f: ${typeof f}`);
 typeof g; // object (массивы в JS - объекты)
 
 // ============================================================
@@ -152,25 +158,39 @@ console.log(result);
 // Task 6 — Arithmetic Operators
 // ============================================================
 /*
-   Вычисли результат вручную, запиши в комментарии,
-   затем проверь в консоли.
+   Вычисли результат вручную для каждого выражения,
+   запиши ответ в комментарии, затем проверь в консоли.
+
+   Выражения (numA = 10, numB = 3):
+   1) numA + numB   — сложение
+   2) numA - numB   — вычитание
+   3) numA * numB   — умножение
+   4) numA / numB   — деление
+   5) numA % numB   — остаток от деления
+   6) numA ** numB  — возведение в степень
 
    Ожидаемый результат:
-   // 1) 
-   // 2)
-   // 3)
-   // 4)
-   // 5)
-   // 6)
+   // 1) 13
+   // 2) 7
+   // 3) 30
+   // 4) 3,33
+   // 5) 1
+   // 6) 1000
 
    — Для каждого выражения используй шаблонную строку вида:
-     `10 + 3 = ${a + b}`
+     `10 + 3 = ${numA + numB}`
 */
 
 let numA = 10;
 let numB = 3;
 
-// твой код здесь - пропущены выражения для вычислений (?)
+// расчеты:
+console.log(`10 + 3 = ${numA + numB}`);
+console.log(`10 - 3 = ${numA - numB}`);
+console.log(`10 * 3 = ${numA * numB}`);
+console.log(`10 / 3 = ${numA / numB}`);
+console.log(`10 % 3 = ${numA % numB}`);
+console.log(`10 ** 3 = ${numA ** numB}`);
 
 // ============================================================
 // Task 7 — Logical Operators: truthy/falsy миксы
