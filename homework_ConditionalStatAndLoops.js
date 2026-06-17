@@ -201,15 +201,16 @@ while (a<13) {
 */
 
 let sum = 0;
-let num = 1;
-while (num <= 30) {
-    if (num % 5 !== 0) {
-        console.log(num);
-    }
-    if (sum > 50) {
-        break;
-    }
-   }
+
+for (let i=1; i <= 30; i++) {
+      if (i % 5 === 0)
+         continue;   
+      sum += i;
+      console.log(i);
+if (sum > 50) {
+         break;
+      }
+}
 
 console.log(`Сумма: ${sum}`);
 
@@ -325,7 +326,27 @@ if (b === 0) {
    — остановись на числе 40
 */
 
-let num=1;
+for (let i=1; i<=50; i++) {
+   if (i%7===0) 
+      continue;
+   if (i===40)
+      break;
+   if (i%3===0 && i%5===0)
+      console.log("FizzBuzz");
+   else if (i%3===0)
+      console.log("Fizz");
+   else if (i%5===0)
+      console.log("Buzz");
+   else
+      console.log(i);
+}
+
+
+
+
+
+
+
 while (num<=50) {
     if (num>40) {
         break;
