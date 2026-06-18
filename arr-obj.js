@@ -17,6 +17,7 @@ while (i) {
     console.log(i--);
 }
 console.log("i = " + i);
+// Answer: the last value in the loop is 1 (as true), then i = 0.
 
 // Exercise 2
 // Question: What values will this while loop print?
@@ -24,6 +25,7 @@ let w = 0;
 while (w++ < 5) {
     console.log(w);
 }
+// Answer: 1, 2, 3, 4, 5 (the condition checks if w is less than 5 before incrementing it).
 
 // Exercise 3
 // Question: Is else needed in this function?
@@ -36,6 +38,7 @@ function checkAge(age) {
 }
 
 checkAge("");
+// Answer: no, else is not needed (function immediately ends). if age false -> return console.log("Ask your parents"); if age true -> return true.
 
 
 // Exercise 4
@@ -45,6 +48,8 @@ while (j != 10) {
     j += 0.2;
 }
 
+// Answer: due to floating point precision, j will never exactly equal 10, so the loop continues indefinitely.
+// not 0.2, 0.4 ... 9.8, 10.0 -> 9.799999999999997, 9.999999999999996, 10.199999999999996
 
 // Exercise 5
 // Question: What will be printed to console?
@@ -52,6 +57,8 @@ for (let i = 1; i < 5; i++) {
     if (i === 3) continue;
     console.log(i);
 }
+
+// Answer: 1, 2, 4 (3 is skipped due to continue)
 
 // Exercise 6
 // Question: What will be printed to console?
