@@ -64,10 +64,12 @@ for (let i = 1; i < 5; i++) {
 // Question: What will be printed to console?
 let a = 10;
 do {
-    a += 1;
+    a += 1; // a=a+1
     console.log(a);
 } while (a < 5);
 
+// Answer: 11 (loop do while executes at least once before checking the condition -> it prints 11 
+// and then exits since a is not less than 5)
 
 // Exercise 7
 // Question: What will be printed to console?
